@@ -2,6 +2,7 @@ package com.example.finalassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
@@ -20,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
         database.execSQL("INSERT INTO finals_courses (course_name, study_website) VALUES ('Discrete Structures 2', 'https://elearn.lau.edu.lb/ultra/courses/_49971_1/cl/outline')");
         database.execSQL("INSERT INTO finals_courses (course_name, study_website) VALUES ('Parallel Programming', 'https://drive.google.com/drive/folders/1LJgeH6yh8e_3nk95dDLcIKpFEfxTZGJ-')");
 
+        Cursor c = database.rawQuery("Select * from finals_courses", null);
+        int name = c.getColumnIndex("study_website");
     }
 }
