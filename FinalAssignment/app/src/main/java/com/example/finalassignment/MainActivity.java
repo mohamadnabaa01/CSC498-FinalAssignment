@@ -2,9 +2,11 @@ package com.example.finalassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,5 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         Cursor c = database.rawQuery("Select * from finals_courses", null);
         int name = c.getColumnIndex("study_website");
+    }
+
+    public void OpenMobileComputing(View view){
+        Intent intent = new Intent(getApplicationContext(), MobileComputing.class);
+        startActivity(intent);
     }
 }
