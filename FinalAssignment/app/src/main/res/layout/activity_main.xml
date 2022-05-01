@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/mobile_computing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mobile Computing"
@@ -27,14 +27,14 @@
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/mobile_computing"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.205" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/game_programming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Game Programming"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.367" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/discrete_structures2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Discrete Structures 2"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.484" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/parallel_programming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Parallel Programming"
