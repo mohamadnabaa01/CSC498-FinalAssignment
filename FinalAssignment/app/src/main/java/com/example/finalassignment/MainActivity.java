@@ -17,5 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         database.execSQL("INSERT INTO finals_courses (course_name, study_website) VALUES ('Mobile Computing', 'https://ionicframework.com/')");
         database.execSQL("INSERT INTO finals_courses (course_name, study_website) VALUES ('Game Programming', 'https://elearn.lau.edu.lb/ultra/courses/_50275_1/cl/outline')");
+        database.execSQL("INSERT INTO finals_courses (course_name, study_website) VALUES ('Discrete Structures 2', 'https://elearn.lau.edu.lb/ultra/courses/_49971_1/cl/outline')");
+
     }
 }
