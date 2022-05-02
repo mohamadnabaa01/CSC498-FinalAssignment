@@ -11,6 +11,9 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.FinalAssignment">
         <activity
+            android:name=".MobileComputing"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
