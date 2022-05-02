@@ -27,7 +27,7 @@ public class GameProgramming extends AppCompatActivity {
         while(c != null) {//while cursor is not empty
             String name = c.getString(course_name);
             Log.i("name", name);
-            if (name.equals("Game Programming")){//if name is Mobile Computing
+            if (name.equals("Game Programming")){//if name is Game Programming
                 String website = c.getString(study_website);
                 Log.i("website", website);
                 view.loadUrl(website);//set the url for the webview
