@@ -20,19 +20,19 @@ public class MobileComputing extends AppCompatActivity {
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new WebViewClient());
         SQLiteDatabase database = this.openOrCreateDatabase("my_final_exams", MODE_PRIVATE, null);
-        Cursor c = database.rawQuery("Select * from finals_courses", null);
-        int course_name = c.getColumnIndex("course_name");
-        int study_website = c.getColumnIndex("study_website");
-        c.moveToFirst();
-        while(c != null) {
+        Cursor c = database.rawQuery("Select * from finals_courses", null);//selecting all values
+        int course_name = c.getColumnIndex("course_name");//get course name from select
+        int study_website = c.getColumnIndex("study_website");//get the website from select
+        c.moveToFirst();//start cursor from beginning
+        while(c != null) {//while cursor is not empty
             String name = c.getString(course_name);
             Log.i("name", name);
-            if (name.equals("Mobile Computing")){
+            if (name.equals("Mobile Computing")){//if name is Mobile Computing
                 String website = c.getString(study_website);
                 Log.i("website", website);
-                view.loadUrl(website);
+                view.loadUrl(website);//set the url for the webview
             }
-            if(!c.moveToNext())
+            if(!c.moveToNext())//if no more next cursor, then leave while loop
                 return;
         }
     }
