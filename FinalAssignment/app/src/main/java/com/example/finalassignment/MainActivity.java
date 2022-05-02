@@ -49,20 +49,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OpenMobileComputing(View view){
-        Intent intent = new Intent(getApplicationContext(), MobileComputing.class);
-        startActivity(intent);
+        Intent mobile_computing = new Intent(getApplicationContext(), MobileComputing.class);
+        startActivity(mobile_computing);
     }
     public void OpenGameProgramming(View view){
-        Intent intent = new Intent(getApplicationContext(), GameProgramming.class);
-        startActivity(intent);
+        Intent game_programming = new Intent(getApplicationContext(), GameProgramming.class);
+        startActivity(game_programming);
     }
     public void OpenDiscreteStructures2(View view){
-        Intent intent = new Intent(getApplicationContext(), DiscreteStructures2.class);
-        startActivity(intent);
+        Intent discrete2 = new Intent(getApplicationContext(), DiscreteStructures2.class);
+        startActivity(discrete2);
     }
     public void OpenParallelProgramming(View view){
-        Intent intent = new Intent(getApplicationContext(), ParallelProgramming.class);
-        startActivity(intent);
+        Intent parallel_programming = new Intent(getApplicationContext(), ParallelProgramming.class);
+        startActivity(parallel_programming);
     }
 
 }

@@ -14,6 +14,15 @@
             android:name=".MobileComputing"
             android:exported="false"/>
         <activity
+            android:name=".GameProgramming"
+            android:exported="false"/>
+        <activity
+            android:name=".DiscreteStructures2"
+            android:exported="false"/>
+        <activity
+            android:name=".ParallelProgramming"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
