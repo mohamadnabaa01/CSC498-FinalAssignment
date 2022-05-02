@@ -27,7 +27,7 @@ public class DiscreteStructures2 extends AppCompatActivity {
         while(c != null) {//while cursor is not empty
             String name = c.getString(course_name);
             Log.i("name", name);
-            if (name.equals("Discrete Structures 2")){//if name is Mobile Computing
+            if (name.equals("Discrete Structures 2")){//if name is Discrete Structures 2
                 String website = c.getString(study_website);
                 Log.i("website", website);
                 view.loadUrl(website);//set the url for the webview
