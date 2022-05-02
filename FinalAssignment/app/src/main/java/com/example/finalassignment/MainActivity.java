@@ -39,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
             else if(game_programming.getText().equals(""))
                 game_programming.setText(name);
             else if(discrete_structures_2.getText().equals(""))
-                mobile_computing.setText(name);
+                discrete_structures_2.setText(name);
             else if(parallel_programming.getText().equals(""))
-                mobile_computing.setText(name);
+                parallel_programming.setText(name);
+
             if(!c.moveToNext())
                 return;
         }
@@ -51,4 +52,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MobileComputing.class);
         startActivity(intent);
     }
+    public void OpenGameProgramming(View view){
+        Intent intent = new Intent(getApplicationContext(), GameProgramming.class);
+        startActivity(intent);
+    }
+    public void OpenDiscreteStructures2(View view){
+        Intent intent = new Intent(getApplicationContext(), DiscreteStructures2.class);
+        startActivity(intent);
+    }
+    public void OpenParallelProgramming(View view){
+        Intent intent = new Intent(getApplicationContext(), ParallelProgramming.class);
+        startActivity(intent);
+    }
+
 }
